@@ -1,94 +1,81 @@
-<html>
-  <head>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9KWFGJ4EM"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){window.dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-Q9KWFGJ4EM');
-      </script>
+<!DOCTYPE html>
+  <html>
+    <head>
+      <style>
+        body {
+        background: url(bg.png) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
 
+      @font-face {
+      font-family: 'friday_night_funkinregular';
+      src: url('fridaynightfunkin-regular-webfont.woff2') format('woff2'),
+         url('fridaynightfunkin-regular-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
 
-      <title>Which Version?</title>
-      <meta name="og:title" content="Mario Royale"/>
-      <meta property="og:title" content="Mario Royale"/>
-      <meta name="twitter:title" content="Mario Royale"/>
+h1 {
+font-family: 'friday_night_funkinregular', Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+}
 
-      <link rel="manifest" href="site.webmanifest">
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-      <meta charset="utf-8">
-      <meta name="viewport" id="meta-zoom" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+h4 {
+font-family: 'friday_night_funkinregular', Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+}
 
-      <link rel="icon" href="https://raw.githubusercontent.com/mroyale/assets/master/img/home/icon.ico">
-      <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/mroyale/assets/master/img/home/icon.ico"/>
-      <link rel="apple-touch-icon" sizes="192x192" href="https://raw.githubusercontent.com/mroyale/assets/master/img/home/android-chrome-192x192.png">
-      <meta name="og:image" content="https://raw.githubusercontent.com/mroyale/assets/master/img/home/android-chrome-192x192.png">
-      <meta property="og:image" content="https://raw.githubusercontent.com/mroyale/assets/master/img/home/android-chrome-192x192.png">
-      <meta name="twitter:image" content="https://raw.githubusercontent.com/mroyale/assets/master/img/home/android-chrome-192x192.png">
+button {
+font-family: 'friday_night_funkinregular', Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+font-size: 60px;
+/*! Makes Buttons Transparent */
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
 
-      <meta name="theme-color" content="#396B7F"/>
-      <meta name="msapplication-navbutton-color" content="#396B7F">
-      <meta name="twitter:widgets:link-color" content="#396B7F">
-      <meta name="twitter:widgets:border-color" content="#396B7F">
+.container {
+  height: 150px;
+  position: relative;
+}
 
-      <meta name="apple-mobile-web-app-capable" content="yes">
-      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-      <meta name="HandheldFriendly" content="true">
-
-      <link rel="canonical" href="http://www.marioroyale.tk/"/>
-      <meta name="og:url" content="http://www.marioroyale.tk/"/>
-      <meta property="og:url" content="http://www.marioroyale.tk/"/>
-
-      <meta name="og:site_name" content="Mario Royale"/>
-      <meta property="og:site_name" content="Mario Royale"/>
-
-      <meta name="og:type" content="website"/>
-      <meta property="og:type" content="website"/>
-      <meta name="twitter:card" content="summary"/>
-      <meta name="twitter:site" content="@terminalarch"/>
-
-      <link rel="stylesheet" type="text/css" href="css/home.css?v=3.9.2">
-      <link rel="stylesheet" type="text/css" href="css/spinner.css?v=3.9.2">
-      <link rel="stylesheet" type="text/css" href="css/link.css?v=3.9.2">
-    <link rel="stylesheet" type="text/css" href="css/control.css?v=3.9.">
-      <script>
-        /* Prevent phones from zooming screen. The webapp handles this. */
-        document.addEventListener('touchmove', function(event) {
-          event = event.originalEvent || event;
-          if (event.scale !== undefined) { event.preventDefault(); }
-        }, false);
-        
-        /* Ensure website is https://. The webapp handles this. */
-        if (window.location.protocol == 'http:') {  
-          window.location.href = 
-          window.location.href.replace('http:', 'https:');
-        } 
-      </script>
-  </head>
-
-  <body id="body">
-    
-    <!-- Main Menu -->
-    <div id="main" class="container-center">
-      <!--<div class='guest-warning'>
-        <p>WARNING: Guest accounts will be removed soon, please register an account!</p>
-      </div>-->
-      
-      <div class="title">
-        <!--Mario Royale-->
-        Which Version?
-
-      </div>
-      <div class="container-launch"> <!-- style="margin-bottom: 20px;margin-top: 40px;" -->
-        <span id='main-launch' class='launch'>Play Now!</span>
-      </div>
-      <div class="container-launch">
-        <span id="main-register" class="launch">Register</span>
-      </div>
-    </div>
-
-  </body>
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
+<title>Version Switcher</title>
+<link rel="icon" type="image/png" href="/favicon.png" />
+</head>
+<body>
+<h1>Which Version?<h1>
+<div class="container">
+<div class="center">
+<button onclick="location.href = 'https://www.newgrounds.com/portal/view/770371';" id="myButton" class="float-left submit-button" style="width:300px;height:80px;">Current</button>
+</div>
+</div>
+<div class="container">
+<div class="center">
+<button onclick="location.href = 'https://www.kickstarter.com/projects/funkin/friday-night-funkin-the-full-ass-game';" id="myButton" class="float-left submit-button" style="width:600px;height:80px;">Legacy</button>
+</div>
+<audio autoplay loop>
+<source src="menu.mp3" type="audio/mpeg">
+<embed src="menu.mp3" autostart="true" loop="true" hidden="true">
+</audio>
+</body>
 </html>
